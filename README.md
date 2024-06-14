@@ -22,7 +22,7 @@
     ```
    2.建立映像檔
    ```bash
-    docker image build -t <該映像檔名稱> .
+    docker build -t <映像檔名> .
     ```
    3.確認映像檔是否建立成功
       ```bash

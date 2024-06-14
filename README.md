@@ -13,6 +13,9 @@
 
 4. **到DockerFile終端機執行**
    
+    ```bash
+    pip install -r requirements.txt
+    ```
    1.登入docker
    ```bash
     docker login <登入伺服器>
@@ -26,14 +29,14 @@
     docker image ls
     ```
 
-5. **登入到 Azure**
+6. **登入到 Azure**
    
    1.登入azure
    ```bash
     az login
     ```
 
-6. **建立 Azure Container Registry 容器登錄**
+7. **建立 Azure Container Registry 容器登錄**
    
     1.建立Azure Container Registry
      ```bash
@@ -44,7 +47,7 @@
     az acr login --name <容器登錄名稱>
     ```
 
-7. **推送 Docker 映像檔到 Azure Container Registry**
+8. **推送 Docker 映像檔到 Azure Container Registry**
 
     1.標記該印像檔
     ```bash
@@ -56,11 +59,11 @@
     ```
     3.確認映像檔是否成功推送到Azure Container Registry中的存放庫
    
-8. **建立容器執行個體**
+9. **建立容器執行個體**
 
     在Azure建立一個容器執行個體並設定--名稱自訂
 
-9. **執行**
+10. **執行**
     
     ```bash
     docker run -p 8080:8080 <該映像檔名稱>
